@@ -1,0 +1,10 @@
+.posts__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(min-width:992px) {
+    .posts__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

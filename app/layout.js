@@ -1,6 +1,6 @@
 import './globals.css'
 import { Outfit } from 'next/font/google'
-import Header from './components/header/header'
+import Header from './components/layout/header/header'
 
 const outfit = Outfit(
   {

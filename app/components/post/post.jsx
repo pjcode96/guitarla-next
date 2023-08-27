@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from './post.modules.css'
+import styles from './post.module.css'
+import LinkButton from '../button/linkButton'
+import { getFormattedDate } from '@/app/utils/helpers'
 
 function Post({ post }) {
 
@@ -11,14 +13,16 @@ function Post({ post }) {
                 className={styles.post__image}
                 src={image.data.attributes.url}
                 alt={`Imagen del post ${title}`}
-                width='30'
-                height='30'
+                width='300'
+                height='300'
             />
             <div className={styles.post__resume}>
                 <h3 className={styles.post__title}>{title}</h3>
-                <p className={styles.post__publishDate}>{publishedAt}</p>
+                <p className={styles.post__publishDate}>{getFormattedDate(publishedAt)}</p>
                 <p className={styles.post__content}>{content}</p>
-                <Link href={slug} className={styles.post__button}>Leer Post</Link>
+                <LinkButton
+                    to={`posts/${post.id}`}
+                >Leer Post</LinkButton>
             </div>
         </div>
     )

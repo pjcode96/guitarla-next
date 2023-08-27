@@ -7,7 +7,7 @@ export default async function PostsPage() {
     const posts = response.data
     return (
         <main>
-            <h1>Hola</h1>
+            <h2 className="heading">Blog</h2>
             <PostList>
                 {posts.length > 0 &&
                     posts.map(

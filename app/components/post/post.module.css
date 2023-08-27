@@ -1,0 +1,27 @@
+.post__title {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.post__publishDate {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.post__image {
+    width: 100%;
+    height: auto;
+}
+
+.post__content {
+    margin: 2rem 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}

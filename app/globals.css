@@ -110,6 +110,7 @@ main {
     transition: all .5s ease;
   }
 
+  .header .active.link:before,
   .header .link:hover:before {
     background-color: white;
     width: 100%;

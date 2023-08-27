@@ -1,0 +1,10 @@
+.link__button {
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}
